@@ -76,6 +76,14 @@ textarea {
     margin-left: 10px;
     margin-bottom: 10px;
 }
+#reset {
+    background-color: #e7e7e7;
+    font-size: 20px;
+    padding: 14px 40px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 /* Start Media Query */
 /* A Media Query max-width: 980px */
@@ -83,12 +91,12 @@ textarea {
     /* Resized content to fit 980px  */
     body {
         max-width: 980px;
-    }   
-    /* Styles for the wrapper div */
-    #wrapper {
-        width: 100%;
-        }
-}
+    } 
+    
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
     /* A Media Query max-width: 786px */
     @media screen and (max-width: 786px) {
     /* Resized content to fit 786px  */

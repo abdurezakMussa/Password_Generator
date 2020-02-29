@@ -3,24 +3,28 @@
 
 <head>
     <meta charset="UTF-8" />
-
+    <!-- This is the first step in making the document responsive but scaling the items to screen -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- This is the title-->
+    <title>Password Generator</title>
+    <!-- These are the style links. Reset CSS and Styles CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This is the Javascript document-->
+    <script src="main.js"></script>
 </head>
-<!-- This is the body -->
 
 <body>
-        <div id="wrapper">
+
+    <!--This is the wrapper container with all of the content-->
+    <div id="wrapper">
         <header>
-            <h1>Password Generator</h1>
+            <h1>Welcome to Password Generator</h1>
         </header>
         <!--This is the content area-->
         <div id="content">
-            <h2>Welcome to Password Generator </h2> 
+            <h2>Generate a Password</h2>
             <hr>
             <!-- This is a readonly text area for output-->
             <textarea readonly id="password" placeholder="Your Secure Password"
@@ -32,12 +36,13 @@
                 <button id="generate">Generate
                     Password</button>
                 <!-- This is the copy button -->
-                <button id="copy">Copy </button>
+                <button id="copy">Copy</button>
+                <!-- This is the Reset the password button -->
+                <button id="reset">Reset </button>
             </div>
         </div>
     </div>
-    <!-- This is the Javascript document-->
-    <script src="main.js"></script>
+
 </body>
 
 </html>
