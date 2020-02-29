@@ -28,7 +28,7 @@ var get = document.querySelector("#generate");
 
 get.addEventListener("click", function () {
     ps = generatePassword();
-    document.getElementById("password").placeholder = ps;
+    document.getElementById("password").placeholder = ps;// ps return value from random password.
 });
 
 // Start function to generate password
@@ -119,13 +119,12 @@ function generatePassword() {
         password.push(pickChoices);
     }
     // This joins the password array and converts it to a string
-    // Worked with a tutor to incorporate this option
+    
     var ps = password.join("");
     UserInput(ps);
     return ps;
 }
-// This puts the password value into the textbox
-// Changed function input to use textcontent
+// This puts the password value into the textbox // Changed function input to use textcontent
 function UserInput(ps) {
     document.getElementById("password").textContent = ps;
 
@@ -140,4 +139,6 @@ function copyPassword() {
     document.getElementById("password").select();
     document.execCommand("Copy");
     alert("Password copied to clipboard!");
+   
+    document.getElementById("password").textContent = " "
 }

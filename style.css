@@ -55,6 +55,7 @@ textarea {
 }
 /* Styles for button div */
 #btn {
+    color: green;
     margin-top: 20px;
 }
 /* Styles for generate button */
